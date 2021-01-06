@@ -11,33 +11,33 @@ from app import app
 
 # 2 column layout. 1st column width = 4/12
 # https://dash-bootstrap-components.opensource.faculty.ai/l/components/layout
+import dash_html_components as html
 column1 = dbc.Col(
     [
         dcc.Markdown(
             """
         
-            ## Your Value Proposition
+            ## Kepler Exoplanet Search Results
 
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
+            Use measurements from the Kepler Space Telescope to build a model that can accurately predict whether 
+            exoplanets are present around stars in our region of the milky way. 
 
-            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
+            This model can help us better understand our local region of the galaxy as well as provide a window into the 
+            possibilities of life in the universe. 
 
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
+            I will use two models, with an 80/20 train validation split. A Gradient Boosted Tree as well as Multinomial 
+            Logistic Regression to classify an observation as 'CONFIRMED', 'CANDIDATE', or 'FALSE POSITIVE'.
 
             """
         ),
-        dcc.Link(dbc.Button('Your Call To Action', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Predict Exoplanets', color='primary'), href='/predictions')
     ],
     md=4,
 )
 
-gapminder = px.data.gapminder()
-fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
-           hover_name="country", log_x=True, size_max=60)
-
 column2 = dbc.Col(
     [
-        dcc.Graph(figure=fig),
+        html.Img(src=app.get_asset_url('transit.jpg'), style={'height':'99%', 'width':'99%'})
     ]
 )
 
