@@ -19,14 +19,14 @@ column1 = dbc.Col(
         
             ## Kepler Exoplanet Search Results
 
-            Using measurements from the Kepler Space Telescope to build a model that can accurately predict whether 
-            exoplanets are present around stars in our region of the milky way. 
-
-            This model can help us better understand our local region of the galaxy as well as provide a window into the 
-            possibilities of life in the universe. 
-
-            I will use two models, with an 80/20 train validation split. A Gradient Boosted Tree as well as Multinomial 
-            Logistic Regression to classify an observation as 'CONFIRMED', 'CANDIDATE', or 'FALSE POSITIVE'.
+            I used measurements from the Kepler Space Telescope to build a model that can accurately predict whether 
+            exoplanets are present around stars in our region of the milky way.
+            
+            This model can help us better understand our local region of the galaxy, as well as provide a window into the 
+            possibilities of life in the universe.
+            
+            I will use two models: a Gradient Boosted Tree, as well as a Multinomial 
+            Logistic Regression, to classify an observation as 'CONFIRMED', 'CANDIDATE', or 'FALSE POSITIVE'.
 
             """
         ),

@@ -17,8 +17,16 @@ column1 = dbc.Col(
         
             ## Insights
 
+            Overall I'm happy with my tree-based model's performance. The precision and recall of my model are both equal at a score 
+            of 0.78 respectively. It also has a validation accuracy score of 0.76.
             
+            The linear model did not perform as well, with precision at 0.67 and recall at 0.42. It also has a validation accuracy 
+            of 0.53. This is not an acceptable model as just guessing 'FALSE POSITIVE', the majority class, you will have an accuracy 
+            score of 0.51.
             
+            As we continue to make new observations about the planets in our galaxy and continue to collect 
+            data from deep space, it's important to have models like this one to make sense of the data and label that 
+            observation correctly.
             
             """
         ),
