@@ -14,7 +14,7 @@ sklearn = "*"
 xgboost = "*"
 category-encoders = "*"
 pandas = "==1.1.4"
-scipy = "*"
+scipy = "==1.4.0"
 
 [requires]
 python_version = "3"
