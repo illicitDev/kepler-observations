@@ -10,7 +10,10 @@ dash = "==1.9.1"
 dash-bootstrap-components = "*"
 gunicorn = "*"
 plotly = "*"
-pandas = "==1.1.5"
+pandas = "*"
+sklearn = "*"
+xgboost = "*"
+categoryencoders = "*"
 
 [requires]
 python_version = "3"
