@@ -17,11 +17,19 @@ column1 = dbc.Col(
         
             ## Insights
 
-
+            
+            
+            
             """
         ),
-
     ],
 )
 
-layout = dbc.Row([column1])
+column2 = dbc.Col(
+    [
+        html.Img(src='../assets/kpe_class_report.png', style={'height': '45%', 'width': '65%'}),
+        html.Br(),
+        html.Img(src='../assets/confusion_matrix.png', style={'height': '45%', 'width': '65%'})
+    ],
+)
+layout = dbc.Row([column1, column2])

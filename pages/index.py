@@ -19,7 +19,7 @@ column1 = dbc.Col(
         
             ## Kepler Exoplanet Search Results
 
-            Use measurements from the Kepler Space Telescope to build a model that can accurately predict whether 
+            Using measurements from the Kepler Space Telescope to build a model that can accurately predict whether 
             exoplanets are present around stars in our region of the milky way. 
 
             This model can help us better understand our local region of the galaxy as well as provide a window into the 
